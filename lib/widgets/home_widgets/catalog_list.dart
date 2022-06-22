@@ -54,7 +54,7 @@ class CatalogItem extends StatelessWidget {
               alignment: MainAxisAlignment.spaceBetween,
               buttonPadding: EdgeInsets.zero,
               children: [
-                "\$${catalog.price}".text.bold.xl.make(),
+                "\$${catalog.price}".text.xl.bold.make(),
                 ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
@@ -63,7 +63,7 @@ class CatalogItem extends StatelessWidget {
                       ),
                       shape: MaterialStateProperty.all(StadiumBorder()),
                     ),
-                    child: "Buy".text.make())
+                    child: "Add to cart".text.make())
               ],
             ).pOnly(right: 8.0)
           ],
